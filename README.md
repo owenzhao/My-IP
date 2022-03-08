@@ -1,3 +1,3 @@
 # My IP
 
-This is a sample App for MyHost package.
+This is a sample app for MyHost package.
