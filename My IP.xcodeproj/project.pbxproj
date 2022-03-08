@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A92138DB8B6FA753CAC7E0C /* Pods_My_IP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC3AD978990485692E55B6AA /* Pods_My_IP.framework */; };
+		DC1EE4DE27D4F35D003BC685 /* My_IPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1EE4DD27D4F35D003BC685 /* My_IPApp.swift */; };
+		DC6932C627D36B2000284867 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6932C527D36B2000284867 /* ContentView.swift */; };
+		DC6932C827D36B2400284867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6932C727D36B2400284867 /* Assets.xcassets */; };
+		DC6932CB27D36B2400284867 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6932CA27D36B2400284867 /* Preview Assets.xcassets */; };
+		DCAD4A4227D5578C0013EAE5 /* MyHost in Frameworks */ = {isa = PBXBuildFile; productRef = DCAD4A4127D5578C0013EAE5 /* MyHost */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		432E26740F522F2650BF649D /* Pods-My IP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My IP.release.xcconfig"; path = "Target Support Files/Pods-My IP/Pods-My IP.release.xcconfig"; sourceTree = "<group>"; };
+		8AAE23F753B1694D78E58308 /* Pods-My IP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My IP.debug.xcconfig"; path = "Target Support Files/Pods-My IP/Pods-My IP.debug.xcconfig"; sourceTree = "<group>"; };
+		BC3AD978990485692E55B6AA /* Pods_My_IP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_IP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC1EE4DD27D4F35D003BC685 /* My_IPApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = My_IPApp.swift; sourceTree = "<group>"; };
+		DC6932C027D36B2000284867 /* My IP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My IP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6932C527D36B2000284867 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DC6932C727D36B2400284867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC6932CA27D36B2400284867 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC6932CC27D36B2400284867 /* My_IP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = My_IP.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC6932BD27D36B2000284867 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAD4A4227D5578C0013EAE5 /* MyHost in Frameworks */,
+				0A92138DB8B6FA753CAC7E0C /* Pods_My_IP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B8C3327A6AFD356BB630C7F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC3AD978990485692E55B6AA /* Pods_My_IP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5FA48364C965C6E24E9F46C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE23F753B1694D78E58308 /* Pods-My IP.debug.xcconfig */,
+				432E26740F522F2650BF649D /* Pods-My IP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DC6932B727D36B2000284867 = {
+			isa = PBXGroup;
+			children = (
+				DC6932C227D36B2000284867 /* My IP */,
+				DC6932C127D36B2000284867 /* Products */,
+				C5FA48364C965C6E24E9F46C /* Pods */,
+				B8C3327A6AFD356BB630C7F3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC6932C127D36B2000284867 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC6932C027D36B2000284867 /* My IP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC6932C227D36B2000284867 /* My IP */ = {
+			isa = PBXGroup;
+			children = (
+				DC1EE4DD27D4F35D003BC685 /* My_IPApp.swift */,
+				DC6932C527D36B2000284867 /* ContentView.swift */,
+				DC6932C727D36B2400284867 /* Assets.xcassets */,
+				DC6932CC27D36B2400284867 /* My_IP.entitlements */,
+				DC6932C927D36B2400284867 /* Preview Content */,
+			);
+			path = "My IP";
+			sourceTree = "<group>";
+		};
+		DC6932C927D36B2400284867 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DC6932CA27D36B2400284867 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC6932BF27D36B2000284867 /* My IP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC6932CF27D36B2400284867 /* Build configuration list for PBXNativeTarget "My IP" */;
+			buildPhases = (
+				7E51C5B3EB8BC1A2A9A94697 /* [CP] Check Pods Manifest.lock */,
+				DC6932BC27D36B2000284867 /* Sources */,
+				DC6932BD27D36B2000284867 /* Frameworks */,
+				DC6932BE27D36B2000284867 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My IP";
+			packageProductDependencies = (
+				DCAD4A4127D5578C0013EAE5 /* MyHost */,
+			);
+			productName = "My IP";
+			productReference = DC6932C027D36B2000284867 /* My IP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC6932B827D36B2000284867 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					DC6932BF27D36B2000284867 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = DC6932BB27D36B2000284867 /* Build configuration list for PBXProject "My IP" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC6932B727D36B2000284867;
+			packageReferences = (
+				DC1EE4DF27D4F56A003BC685 /* XCRemoteSwiftPackageReference "MyHost" */,
+			);
+			productRefGroup = DC6932C127D36B2000284867 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC6932BF27D36B2000284867 /* My IP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC6932BE27D36B2000284867 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6932CB27D36B2400284867 /* Preview Assets.xcassets in Resources */,
+				DC6932C827D36B2400284867 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E51C5B3EB8BC1A2A9A94697 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My IP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC6932BC27D36B2000284867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6932C627D36B2000284867 /* ContentView.swift in Sources */,
+				DC1EE4DE27D4F35D003BC685 /* My_IPApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DC6932CD27D36B2400284867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC6932CE27D36B2400284867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DC6932D027D36B2400284867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AAE23F753B1694D78E58308 /* Pods-My IP.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "My IP/My_IP.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"My IP/Preview Content\"";
+				DEVELOPMENT_TEAM = 96NM39SGJ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parussoft.My-IP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DC6932D127D36B2400284867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 432E26740F522F2650BF649D /* Pods-My IP.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "My IP/My_IP.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"My IP/Preview Content\"";
+				DEVELOPMENT_TEAM = 96NM39SGJ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parussoft.My-IP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC6932BB27D36B2000284867 /* Build configuration list for PBXProject "My IP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC6932CD27D36B2400284867 /* Debug */,
+				DC6932CE27D36B2400284867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC6932CF27D36B2400284867 /* Build configuration list for PBXNativeTarget "My IP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC6932D027D36B2400284867 /* Debug */,
+				DC6932D127D36B2400284867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC1EE4DF27D4F56A003BC685 /* XCRemoteSwiftPackageReference "MyHost" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:owenzhao/MyHost.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DCAD4A4127D5578C0013EAE5 /* MyHost */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC1EE4DF27D4F56A003BC685 /* XCRemoteSwiftPackageReference "MyHost" */;
+			productName = MyHost;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DC6932B827D36B2000284867 /* Project object */;
+}

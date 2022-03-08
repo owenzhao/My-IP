@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MyHost",
+        "repositoryURL": "git@github.com:owenzhao/MyHost.git",
+        "state": {
+          "branch": null,
+          "revision": "beee87abdb0770ba0b61d6bd7f79c05ce2776805",
+          "version": "1.0.18"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
