@@ -59,7 +59,7 @@ struct ContentView: View {
             }
         }
         .padding()
-        .frame(minWidth: 400, minHeight: 600)
+        .frame(minWidth: 300, minHeight: 400)
     }
     
     private func show(networkLink:NetworkLink) -> String {
