@@ -9,69 +9,57 @@ import SwiftUI
 import MyHost
 
 struct ContentView: View {
-    @State var enthernet:NetworkLink
-    @State var wifi:NetworkLink
-    @State var internetIPV4:String
-    @State var internetIPV6:String
-    
-    private let enthernetUpdatePublisher = NotificationCenter.default.publisher(for: MyHost.EnthernetUpdate, object: nil)
-    private let wifiUpdatePublisher = NotificationCenter.default.publisher(for: MyHost.WifiUpdate, object: nil)
-    private let internetIPV4Publisher = NotificationCenter.default.publisher(for: MyHost.InternetIPV4Update, object: nil)
-    private let internetIPV6Publisher = NotificationCenter.default.publisher(for: MyHost.InternetIPV6Update, object: nil)
+    @ObservedObject var myHost:MyHost = MyHost()
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            VStack(alignment: .leading, spacing: -15) {
+            VStack(alignment: .leading, spacing: 0) {
+                Text("Network")
+                    .font(.title2)
+                    .foregroundColor(.green)
+                if myHost.reachable {
+                    Text("Connected")
+                        .font(.body)
+                        .foregroundColor(.blue)
+                } else {
+                    Text("Not Available")
+                        .font(.body)
+                        .foregroundColor(.red)
+                }
+            }
+            
+            VStack(alignment: .leading, spacing: 0) {
                 Text("Wired Network")
                     .font(.title2)
                     .foregroundColor(.green)
-                Text(show(networkLink:enthernet))
+                Text(show(networkLink:myHost.enthernet))
                     .font(.body)
                     .foregroundColor(.blue)
-                    .onReceive(enthernetUpdatePublisher) { notification in
-                        if let enthernet = notification.object as? NetworkLink {
-                            self.enthernet = enthernet
-                        }
-                    }
             }
             
-            VStack(alignment: .leading, spacing: -15) {
+            VStack(alignment: .leading, spacing: 0) {
                 Text("Wifi Network")
                     .font(.title2)
                     .foregroundColor(.green)
-                Text(show(networkLink:wifi))
+                Text(show(networkLink:myHost.wifi))
                     .font(.body)
                     .foregroundColor(.blue)
-                    .onReceive(wifiUpdatePublisher) { notification in
-                        if let wifi = notification.object as? NetworkLink {
-                            self.wifi = wifi
-                        }
-                    }
             }
             
             VStack(alignment: .leading, spacing: 0) {
                 Text("Internet")
                     .font(.title2)
                     .foregroundColor(.green)
-                Text("IPV4: \(internetIPV4)")
+                Text("IPV4: \(myHost.internetIPV4)")
                     .font(.body)
                     .foregroundColor(.blue)
-                    .onReceive(internetIPV4Publisher) { notification in
-                        if let internet = notification.object as? String {
-                            internetIPV4 = internet
-                        }
-                    }
-                Text("IPV6: \(internetIPV6)")
+                Text("IPV6: \(myHost.internetIPV6)")
                     .font(.body)
                     .foregroundColor(.blue)
-                    .onReceive(internetIPV4Publisher) { notification in
-                        if let internet = notification.object as? String {
-                            internetIPV6 = internet
-                        }
-                    }
-            }            
-        }.padding()
-        
+            }
+        }
+        .padding()
+        .frame(minWidth: 400, minHeight: 600)
     }
     
     private func show(networkLink:NetworkLink) -> String {
@@ -96,6 +84,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(enthernet: NetworkLink(MAC: ""), wifi: NetworkLink(MAC: ""), internetIPV4: "", internetIPV6: "")
+        ContentView()
     }
 }

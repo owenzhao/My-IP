@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		0A92138DB8B6FA753CAC7E0C /* Pods_My_IP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC3AD978990485692E55B6AA /* Pods_My_IP.framework */; };
 		DC1EE4DE27D4F35D003BC685 /* My_IPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1EE4DD27D4F35D003BC685 /* My_IPApp.swift */; };
+		DC5AAAC4281BDB5B009C3DC4 /* MyHost in Frameworks */ = {isa = PBXBuildFile; productRef = DC5AAAC3281BDB5B009C3DC4 /* MyHost */; };
 		DC6932C627D36B2000284867 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6932C527D36B2000284867 /* ContentView.swift */; };
 		DC6932C827D36B2400284867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6932C727D36B2400284867 /* Assets.xcassets */; };
 		DC6932CB27D36B2400284867 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6932CA27D36B2400284867 /* Preview Assets.xcassets */; };
-		DCAD4A4227D5578C0013EAE5 /* MyHost in Frameworks */ = {isa = PBXBuildFile; productRef = DCAD4A4127D5578C0013EAE5 /* MyHost */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +20,7 @@
 		8AAE23F753B1694D78E58308 /* Pods-My IP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My IP.debug.xcconfig"; path = "Target Support Files/Pods-My IP/Pods-My IP.debug.xcconfig"; sourceTree = "<group>"; };
 		BC3AD978990485692E55B6AA /* Pods_My_IP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_IP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1EE4DD27D4F35D003BC685 /* My_IPApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = My_IPApp.swift; sourceTree = "<group>"; };
+		DC5AAAC2281BDB50009C3DC4 /* MyHost */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MyHost; path = ../MyHost; sourceTree = "<group>"; };
 		DC6932C027D36B2000284867 /* My IP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My IP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6932C527D36B2000284867 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DC6932C727D36B2400284867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCAD4A4227D5578C0013EAE5 /* MyHost in Frameworks */,
+				DC5AAAC4281BDB5B009C3DC4 /* MyHost in Frameworks */,
 				0A92138DB8B6FA753CAC7E0C /* Pods_My_IP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,9 +58,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DC5AAAC1281BDB50009C3DC4 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				DC5AAAC2281BDB50009C3DC4 /* MyHost */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		DC6932B727D36B2000284867 = {
 			isa = PBXGroup;
 			children = (
+				DC5AAAC1281BDB50009C3DC4 /* Packages */,
 				DC6932C227D36B2000284867 /* My IP */,
 				DC6932C127D36B2000284867 /* Products */,
 				C5FA48364C965C6E24E9F46C /* Pods */,
@@ -113,7 +123,7 @@
 			);
 			name = "My IP";
 			packageProductDependencies = (
-				DCAD4A4127D5578C0013EAE5 /* MyHost */,
+				DC5AAAC3281BDB5B009C3DC4 /* MyHost */,
 			);
 			productName = "My IP";
 			productReference = DC6932C027D36B2000284867 /* My IP.app */;
@@ -127,7 +137,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					DC6932BF27D36B2000284867 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -144,7 +154,6 @@
 			);
 			mainGroup = DC6932B727D36B2000284867;
 			packageReferences = (
-				DC1EE4DF27D4F56A003BC685 /* XCRemoteSwiftPackageReference "MyHost" */,
 			);
 			productRefGroup = DC6932C127D36B2000284867 /* Products */;
 			projectDirPath = "";
@@ -399,21 +408,9 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		DC1EE4DF27D4F56A003BC685 /* XCRemoteSwiftPackageReference "MyHost" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:owenzhao/MyHost.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.7;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		DCAD4A4127D5578C0013EAE5 /* MyHost */ = {
+		DC5AAAC3281BDB5B009C3DC4 /* MyHost */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DC1EE4DF27D4F56A003BC685 /* XCRemoteSwiftPackageReference "MyHost" */;
 			productName = MyHost;
 		};
 /* End XCSwiftPackageProductDependency section */
