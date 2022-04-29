@@ -9,22 +9,24 @@ import SwiftUI
 import MyHost
 
 struct ContentView: View {
-    @ObservedObject var myHost:MyHost = MyHost()
-    @State private var reachable = false
-    private let reachableUpdatePublisher = NotificationCenter.default.publisher(for: MyHost.ReachableUpdate, object: nil)
+    @ObservedObject var myHost = MyHost.shared
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             VStack(alignment: .leading, spacing: 0) {
+                Text("My Host State")
+                    .font(.title2)
+                    .foregroundColor(.green)
+                Text(myHost.state)
+                    .font(.body)
+                    .foregroundColor(.blue)
+            }
+            
+            VStack(alignment: .leading, spacing: 0) {
                 Text("Network")
                     .font(.title2)
                     .foregroundColor(.green)
-                    .onReceive(reachableUpdatePublisher) { notification in
-                        if let reachable = notification.object as? Bool {
-                            self.reachable = reachable
-                        }
-                    }
-                if reachable {
+                if myHost.reachable {
                     Text("Connected")
                         .font(.body)
                         .foregroundColor(.blue)
@@ -64,13 +66,29 @@ struct ContentView: View {
                     .font(.body)
                     .foregroundColor(.blue)
             }
+            
+            HStack {
+                Button {
+                    Task {
+                        await myHost.start()
+                    }
+                } label: {
+                    Text("Start")
+                }
+
+                Button {
+                    myHost.stop()
+                } label: {
+                    Text("Stop")
+                }
+            }
         }
         .padding()
-        .frame(minWidth: 300, minHeight: 400)
+        .frame(minWidth: 300, minHeight: 420)
     }
     
     private func show(networkLink:NetworkLink) -> String {
-        var result = "\nMac: \(networkLink.MAC)"
+        var result = "Mac: \(networkLink.MAC)"
         
         if let ipv4 = networkLink.ipv4 {
             result += "\nIPV4: \(ipv4)"
