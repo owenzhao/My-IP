@@ -10,6 +10,8 @@ import MyHost
 
 struct ContentView: View {
     @ObservedObject var myHost:MyHost = MyHost()
+    @State private var reachable = false
+    private let reachableUpdatePublisher = NotificationCenter.default.publisher(for: MyHost.ReachableUpdate, object: nil)
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -17,7 +19,12 @@ struct ContentView: View {
                 Text("Network")
                     .font(.title2)
                     .foregroundColor(.green)
-                if myHost.reachable {
+                    .onReceive(reachableUpdatePublisher) { notification in
+                        if let reachable = notification.object as? Bool {
+                            self.reachable = reachable
+                        }
+                    }
+                if reachable {
                     Text("Connected")
                         .font(.body)
                         .foregroundColor(.blue)
