@@ -85,6 +85,11 @@ struct ContentView: View {
         }
         .padding()
         .frame(minWidth: 300, minHeight: 420)
+        .onAppear {
+            Task {
+                await myHost.start()
+            }
+        }
     }
     
     private func show(networkLink:NetworkLink) -> String {
